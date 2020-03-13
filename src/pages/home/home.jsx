@@ -111,7 +111,7 @@ export default class Home extends React.Component {
                 </Menu>
                 <div className='right'>
                     <div className='header'>
-                        <a href=""><GithubOutlined className='github' /></a>
+                        <a href="https://github.com/Starscape000/react-admin.git"><GithubOutlined className='github' /></a>
                         <Dropdown overlay={menu}>
                             <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
                                 <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDlKeiZPW2EXNfMvrkD5ddmoJi2zDZX988o7X9MkbWyWBVQg6T" />
