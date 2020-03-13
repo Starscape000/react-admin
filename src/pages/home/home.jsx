@@ -19,7 +19,8 @@ export default class Home extends React.Component {
         super(props)
 
         this.state = {
-            username: ''
+            username: '',
+            routing: '首页'
         }
     }
 
@@ -111,7 +112,7 @@ export default class Home extends React.Component {
                 </Menu>
                 <div className='right'>
                     <div className='header'>
-                        <a href="https://github.com/Starscape000/react-admin.git"><GithubOutlined className='github' /></a>
+                        <a href="https://github.com/Starscape000/react-admin.git" target='_blank'><GithubOutlined className='github' /></a>
                         <Dropdown overlay={menu}>
                             <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
                                 <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDlKeiZPW2EXNfMvrkD5ddmoJi2zDZX988o7X9MkbWyWBVQg6T" />
@@ -120,7 +121,7 @@ export default class Home extends React.Component {
                         </Dropdown>
                     </div>
                     <div className='content'>
-                        <p>当前路由提示</p>
+                        <p className='routing'>{this.state.routing}</p>
                         <div>
                             <p>好的吧</p>
                             <p>好的吧</p>

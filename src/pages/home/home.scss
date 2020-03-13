@@ -65,12 +65,13 @@
             right: 0;
             padding: 10px 10px 0 266px;
             overflow: hidden;
-            p {
+            .routing {
                 height: 40px;
                 background: white;
                 line-height: 40px;
                 border-radius: 5px;
                 box-shadow: 0 0 2px 2px #ccc;
+                padding-left: 10px;
             }
             div {
                 height: 100%;

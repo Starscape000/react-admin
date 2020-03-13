@@ -15,6 +15,14 @@ export default class Login extends React.Component {
         this.state = {}
     }
 
+    componentWillMount () {
+        // 判断当前是否有用户登录过
+        if (localStorage.getItem('username')) {
+            // 跳转路由到首页
+            this.props.history.push('/home');
+        }
+    }
+
     render () {
         // 信息输入正确执行
         const onFinish = values => {
