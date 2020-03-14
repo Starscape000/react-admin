@@ -1,0 +1,168 @@
+.index {
+    width: 100%;
+    padding: 0 2px;
+    .brand {
+        width: 100%;
+        height: 104px;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 2px 0;
+        div:nth-child(1) {
+            width: 24%;
+            height: 100px;
+            background: #a35ec0;
+            border-radius: 10px;
+            color: white;
+            font-size: 50px;
+            line-height: 100px;
+            padding-left: 50px;
+            position: relative;
+            box-shadow: 0 0 2px 2px #ccc;
+            .num {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                line-height: 50px;
+                font-weight: 700;
+                position: absolute;
+                top: 10px;
+                right: 50px;
+            }
+            .name {
+                width: 50px;
+                height: 50px;
+                font-size: 14px;
+                line-height: 50px;
+                font-weight: 700;
+                position: absolute;
+                top: 40px;
+                right: 50px;
+            }
+        }
+        div:nth-child(2) {
+            width: 24%;
+            height: 100px;
+            background: #52975c;
+            border-radius: 10px;
+            color: white;
+            font-size: 50px;
+            line-height: 100px;
+            padding-left: 50px;
+            position: relative;
+            box-shadow: 0 0 2px 2px #ccc;
+            .num {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                line-height: 50px;
+                font-weight: 700;
+                position: absolute;
+                top: 10px;
+                right: 50px;
+            }
+            .name {
+                width: 50px;
+                height: 50px;
+                font-size: 14px;
+                line-height: 50px;
+                font-weight: 700;
+                position: absolute;
+                top: 40px;
+                right: 50px;
+            }
+        }
+        div:nth-child(3) {
+            width: 24%;
+            height: 100px;
+            background: #42469e;
+            border-radius: 10px;
+            color: white;
+            font-size: 50px;
+            line-height: 100px;
+            padding-left: 50px;
+            position: relative;
+            box-shadow: 0 0 2px 2px #ccc;
+            .num {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                line-height: 50px;
+                font-weight: 700;
+                position: absolute;
+                top: 10px;
+                right: 50px;
+            }
+            .name {
+                width: 50px;
+                height: 50px;
+                font-size: 14px;
+                line-height: 50px;
+                font-weight: 700;
+                position: absolute;
+                top: 40px;
+                right: 50px;
+            }
+        }
+        div:nth-child(4) {
+            width: 24%;
+            height: 100px;
+            background: #a93e52;
+            border-radius: 10px;
+            color: white;
+            font-size: 50px;
+            line-height: 100px;
+            padding-left: 50px;
+            position: relative;
+            box-shadow: 0 0 2px 2px #ccc;
+            .num {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                line-height: 50px;
+                font-weight: 700;
+                position: absolute;
+                top: 10px;
+                right: 50px;
+            }
+            .name {
+                width: 50px;
+                height: 50px;
+                font-size: 14px;
+                line-height: 50px;
+                font-weight: 700;
+                position: absolute;
+                top: 40px;
+                right: 50px;
+            }
+        }
+    }
+    .main {
+        margin: 20px 0 2px;
+        padding-top: 40px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        overflow: visible;
+    }
+    .main1 {
+        margin: 20px 0 2px;
+        padding-top: 40px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        overflow: visible;
+    }
+    .main2 {
+        margin: 20px 0 2px;
+        padding-top: 40px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        overflow: visible;
+    }
+    .foot {
+        text-align: center;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+}
