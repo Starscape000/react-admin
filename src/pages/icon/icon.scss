@@ -1,3 +1,36 @@
 .icon {
-
+    .dire {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        p {
+            font-size: 18px;
+        }
+        .anticon {
+            width: 10%;
+            height: 70px;
+            font-size: 30px;
+            line-height: 70px;
+            &:hover {
+                background: #ccc;
+            }
+        }
+    }
+    .hint {
+        @extend .dire;
+    }
+    .edit {
+        @extend .dire;
+    }
+    .brand {
+        @extend .dire;
+    }
+    .common {
+        @extend .dire;
+    }
+    .demo {
+        @extend .dire;
+    }
 }
