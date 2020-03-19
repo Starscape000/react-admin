@@ -17,6 +17,7 @@ import {
 import Index from '../index/index';
 import Buttonc from '../buttonc/buttonc';
 import Icon from '../icon/icon';
+import Load from '../load/load';
 
 const {SubMenu} = Menu;
 
@@ -113,6 +114,11 @@ export default class Home extends React.Component {
                                 图标
                             </Link>
                         </Menu.Item>
+                        <Menu.Item key="load">
+                            <Link to='/general/load'>
+                                加载
+                            </Link>
+                        </Menu.Item>
                     </SubMenu>
                     <SubMenu
                     key="sub2"
@@ -148,6 +154,7 @@ export default class Home extends React.Component {
                         <Route path='/home' component={Index}></Route>
                         <Route path='/general/button' component={Buttonc}></Route>
                         <Route path='/general/icon' component={Icon}></Route>
+                        <Route path='/general/load' component={Load}></Route>
                     </div>
                 </div>
             </div>

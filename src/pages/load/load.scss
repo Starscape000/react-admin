@@ -1,0 +1,48 @@
+.load {
+    .basic {
+        float: left;
+        width: 49%;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        p {
+            font-size: 18px;
+            border-bottom: 1px solid #aaa;
+        }
+    }
+    .size {
+        @extend .basic;
+        float: right;
+        .ant-spin {
+            margin-right: 20px;
+        }
+    }
+    .vessel {
+        @extend .basic;
+        .example {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+            margin-bottom: 20px;
+            padding: 100px 50px;
+            margin: 20px 0;
+        }
+    }
+    .card {
+        @extend .basic;
+        float: right;
+    }
+    .explain {
+        @extend .basic;
+        float: right;
+    }
+    .stand {
+        @extend .basic;
+    }
+    .circle {
+        @extend .basic;
+        float: right;
+    }
+}
