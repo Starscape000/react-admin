@@ -1,0 +1,63 @@
+.btn {
+    .btn1 {
+        float: left;
+        width: 49%;
+        height: 100px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding-top: 30px;
+        padding-left: 50px;
+        Button {
+            margin-left: 20px;
+        }
+    }
+    .btn2 {
+        @extend .btn1;
+        float: right;
+    }
+    .btn3 {
+        float: left;
+        width: 49%;
+        height: 300px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding-top: 50px;
+        padding-left: 50px;
+        margin-top: 20px;
+        .ant-radio-group {
+            margin-left: 20px; 
+        }
+        Button {
+            margin-left: 20px;
+        }
+    }
+    .btn4 {
+        float: right;
+        width: 49%;
+        height: 300px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding-top: 50px;
+        padding-left: 50px;
+        margin-top: 20px;
+        Button {
+            margin-left: 20px;
+        }
+    }
+    .btn5 {
+        float: left;
+        width: 49%;
+        height: 300px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        margin-top: 20px;
+        padding: 20px 20px 0;
+        Button {
+            margin-bottom: 20px;
+        }
+    }
+}

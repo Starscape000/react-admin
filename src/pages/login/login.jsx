@@ -30,7 +30,7 @@ export default class Login extends React.Component {
             localStorage.setItem('username', values.username);
 
             // 跳转路由到首页
-            this.props.history.push('/home');
+            this.props.history.push('/');
         };
         // 信息输入正确执行
         const onFinishFailed = errorInfo => {

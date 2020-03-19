@@ -221,7 +221,7 @@ export default class Index extends React.Component {
     render () {
         return (
             <div className='index'>
-                <div class='brand'>
+                <div className='brand'>
                     <div>
                         <QqOutlined />
                         <span className='num'>999+</span>

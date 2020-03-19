@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import {HashRouter, Link, Route} from 'react-router-dom';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 
 import Login from './pages/login/login';
 import Home from './pages/home/home';
@@ -9,8 +9,10 @@ function App() {
   return (
     <HashRouter>
       <div className='App'>
-        <Route exact path='/' component={Login}></Route>
-        <Route exact path='/home' component={Home}></Route>
+        <Switch>
+          <Route path='/login' component={Login}></Route>
+          <Route path='/' component={Home}></Route> 
+        </Switch>
       </div>
     </HashRouter>
   );
