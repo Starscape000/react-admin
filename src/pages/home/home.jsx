@@ -11,7 +11,8 @@ import {
     EditOutlined,
     SettingOutlined,
     PoweroffOutlined,
-    AppstoreOutlined
+    AppstoreOutlined,
+    FormOutlined
 } from '@ant-design/icons';
 
 import Index from '../index/index';
@@ -21,7 +22,7 @@ import Load from '../load/load';
 import Dialog from '../dialog/dialog';
 import Folded from '../folded/folded';
 import Label from '../label/label';
-import Tree from '../tree/tree';
+import Treecon from '../treecon/treecon';
 import Slide from '../slide/slide';
 
 const {SubMenu} = Menu;
@@ -140,29 +141,40 @@ export default class Home extends React.Component {
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="tree">
-                            <Link to='/general/tree'>
+                            <Link to='/general/treecon'>
                                 树形控件
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="slide">
                             <Link to='/general/slide'>
-                                轮播图
+                                走马灯
                             </Link>
                         </Menu.Item>
                     </SubMenu>
                     <SubMenu
-                    key="sub2"
-                    title={
-                        <span>
-                            <HomeOutlined />
-                            <span>Navigation Four</span>
-                        </span>
-                    }
+                        key="表单"
+                        title={
+                            <span>
+                                <FormOutlined className='inter' />
+                                <span>表单</span>
+                            </span>
+                        }
                     >
-                        <Menu.Item key="7">Option 7</Menu.Item>
-                        <Menu.Item key="8">Option 8</Menu.Item>
-                        <Menu.Item key="9">Option 9</Menu.Item>
-                        <Menu.Item key="10">Option 10</Menu.Item>
+                        <Menu.Item key="slide">
+                            <Link to='/general/slide'>
+                                登录
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="slide1">
+                            <Link to='/general/slide'>
+                                注册
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="slide2">
+                            <Link to='/general/slide'>
+                                富文本
+                            </Link>
+                        </Menu.Item>
                     </SubMenu>
                 </Menu>
                 <div className='right'>
@@ -188,7 +200,7 @@ export default class Home extends React.Component {
                         <Route path='/general/dialog' component={Dialog}></Route>
                         <Route path='/general/folded' component={Folded}></Route>
                         <Route path='/general/label' component={Label}></Route>
-                        <Route path='/general/tree' component={Tree}></Route>
+                        <Route path='/general/treecon' component={Treecon}></Route>
                         <Route path='/general/slide' component={Slide}></Route>
                     </div>
                 </div>

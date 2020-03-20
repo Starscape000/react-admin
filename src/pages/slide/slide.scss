@@ -1,5 +1,36 @@
 .slide {
-    h1 {
-        color: red;
+    .ant-carousel .slick-slide {
+        text-align: center;
+        height: 160px;
+        line-height: 160px;
+        background: #364d79;
+        overflow: hidden;
+    }
+    .ant-carousel .slick-slide h3 {
+        color: #fff;
+    }
+    .slide1 {
+        float: left;
+        width: 49%;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        p {
+            font-size: 18px;
+            border-bottom: 1px solid #aaa;
+        }
+    }
+    .slide2 {
+        @extend .slide1;
+        float: right;
+    }
+    .slide3 {
+        @extend .slide1;
+    }
+    .slide4 {
+        @extend .slide1;
+        float: right;
     }
 }

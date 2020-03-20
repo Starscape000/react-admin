@@ -1,0 +1,35 @@
+.treecon {
+    .treecon1 {
+        float: left;
+        width: 49%;
+        height: 255px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        p {
+            font-size: 18px;
+            border-bottom: 1px solid #aaa;
+        }
+    }
+    .treecon2 {
+        @extend .treecon1;
+        float: right;
+        height: 510px;
+    }
+    .treecon3 {
+        @extend .treecon1;
+        height: 715px;
+    }
+    .treecon4 {
+        @extend .treecon1;
+        float: right;
+        height: 255px;
+    }
+    .treecon5 {
+        @extend .treecon1;
+        float: right;
+        height: 175px;
+    }
+}
