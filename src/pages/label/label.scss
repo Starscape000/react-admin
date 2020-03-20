@@ -1,0 +1,39 @@
+.label {
+    .label1 {
+        float: left;
+        width: 49%;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        p {
+            font-size: 18px;
+            border-bottom: 1px solid #aaa;
+        }
+    }
+    .label2 {
+        @extend .label1;
+        float: right;
+    }
+    .label3 {
+        @extend .label1;
+    }
+    .label4 {
+        @extend .label1;
+        float: right;
+    }
+    .label5 {
+        float: left;
+        width: 100%;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        p {
+            font-size: 18px;
+            border-bottom: 1px solid #aaa;
+        }
+    }
+     
+}
