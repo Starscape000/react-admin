@@ -1,0 +1,14 @@
+.dialog {
+    .main {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        div {
+            margin-bottom: 20px;
+        }
+        .ant-btn {
+            margin-right: 20px;
+        }
+    }
+}
