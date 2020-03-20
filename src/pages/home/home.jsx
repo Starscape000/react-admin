@@ -24,6 +24,8 @@ import Folded from '../folded/folded';
 import Label from '../label/label';
 import Treecon from '../treecon/treecon';
 import Slide from '../slide/slide';
+import Common from '../common/common';
+import Richtext from '../richtext/richtext';
 
 const {SubMenu} = Menu;
 
@@ -152,7 +154,7 @@ export default class Home extends React.Component {
                         </Menu.Item>
                     </SubMenu>
                     <SubMenu
-                        key="表单"
+                        key="form"
                         title={
                             <span>
                                 <FormOutlined className='inter' />
@@ -160,18 +162,13 @@ export default class Home extends React.Component {
                             </span>
                         }
                     >
-                        <Menu.Item key="slide">
-                            <Link to='/general/slide'>
-                                登录
+                        <Menu.Item key="common">
+                            <Link to='/form/common'>
+                                常用
                             </Link>
                         </Menu.Item>
-                        <Menu.Item key="slide1">
-                            <Link to='/general/slide'>
-                                注册
-                            </Link>
-                        </Menu.Item>
-                        <Menu.Item key="slide2">
-                            <Link to='/general/slide'>
+                        <Menu.Item key="richtext">
+                            <Link to='/form/richtext'>
                                 富文本
                             </Link>
                         </Menu.Item>
@@ -202,6 +199,8 @@ export default class Home extends React.Component {
                         <Route path='/general/label' component={Label}></Route>
                         <Route path='/general/treecon' component={Treecon}></Route>
                         <Route path='/general/slide' component={Slide}></Route>
+                        <Route path='/form/common' component={Common}></Route>
+                        <Route path='/form/richtext' component={Richtext}></Route>
                     </div>
                 </div>
             </div>

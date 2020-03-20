@@ -1,0 +1,25 @@
+.common {
+    .common1 {
+        float: left;
+        width: 49%;
+        height: 635px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        p {
+            font-size: 18px;
+            border-bottom: 1px solid #aaa;
+        }
+    }
+    .common2 {
+        @extend .common1;
+        float: right;
+    }
+    .common3 {
+        @extend .common1;
+        width: 100%;
+        height: 950px;
+    }
+}
