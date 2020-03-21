@@ -10,4 +10,17 @@
             border-bottom: 1px solid #aaa;
         }
     }
+    .tablebox2 {
+        @extend .tablebox1;
+        height: 756px;
+    }
+    .tablebox3 {
+        @extend .tablebox1;
+        height: 757px;
+        .editable-row .ant-form-explain {
+            position: absolute;
+            font-size: 12px;
+            margin-top: -4px;
+        }
+    }
 }
