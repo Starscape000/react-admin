@@ -12,7 +12,8 @@ import {
     SettingOutlined,
     PoweroffOutlined,
     AppstoreOutlined,
-    FormOutlined
+    FormOutlined,
+    TableOutlined
 } from '@ant-design/icons';
 
 import Index from '../index/index';
@@ -26,6 +27,8 @@ import Treecon from '../treecon/treecon';
 import Slide from '../slide/slide';
 import Common from '../common/common';
 import Richtext from '../richtext/richtext';
+import Listbox from '../listbox/listbox';
+import Tablebox from '../tablebox/tablebox';
 
 const {SubMenu} = Menu;
 
@@ -173,6 +176,26 @@ export default class Home extends React.Component {
                             </Link>
                         </Menu.Item>
                     </SubMenu>
+                    <SubMenu
+                        key="show"
+                        title={
+                            <span>
+                                <TableOutlined className='inter' />
+                                <span>展示数据</span>
+                            </span>
+                        }
+                    >
+                        <Menu.Item key="listbox">
+                            <Link to='/show/listbox'>
+                                列表
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="tablebox">
+                            <Link to='/show/tablebox'>
+                                表格
+                            </Link>
+                        </Menu.Item>
+                    </SubMenu>
                 </Menu>
                 <div className='right'>
                     <div className='header'>
@@ -201,6 +224,8 @@ export default class Home extends React.Component {
                         <Route path='/general/slide' component={Slide}></Route>
                         <Route path='/form/common' component={Common}></Route>
                         <Route path='/form/richtext' component={Richtext}></Route>
+                        <Route path='/show/listbox' component={Listbox}></Route>
+                        <Route path='/show/tablebox' component={Tablebox}></Route>
                     </div>
                 </div>
             </div>
