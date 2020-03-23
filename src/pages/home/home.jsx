@@ -1,7 +1,7 @@
 // 首页组件
 
 import React from 'react';
-import {Link, Route, Redirect} from 'react-router-dom';
+import {Link, Route, Redirect, Switch} from 'react-router-dom';
 import './home.scss'; 
 import { Menu, Dropdown, Avatar } from 'antd';
 import {
@@ -29,6 +29,7 @@ import Common from '../common/common';
 import Richtext from '../richtext/richtext';
 import Listbox from '../listbox/listbox';
 import Tablebox from '../tablebox/tablebox';
+import Animate from '../animate/animate';
 
 const {SubMenu} = Menu;
 
@@ -196,6 +197,31 @@ export default class Home extends React.Component {
                             </Link>
                         </Menu.Item>
                     </SubMenu>
+                    <SubMenu
+                        key="other"
+                        title={
+                            <span>
+                                <TableOutlined className='inter' />
+                                <span>其它</span>
+                            </span>
+                        }
+                    >
+                        <Menu.Item key="animate">
+                            <Link to='/other/animate'>
+                                动画
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="page404">
+                            <Link to='/page404'>
+                                404
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="page500">
+                            <Link to='/page500'>
+                                500
+                            </Link>
+                        </Menu.Item>
+                    </SubMenu>
                 </Menu>
                 <div className='right'>
                     <div className='header'>
@@ -209,7 +235,6 @@ export default class Home extends React.Component {
                         <p className='routing'>{this.state.routing}</p>
                     </div>
                     <div className='content'>
-                        
                         <Route exact path='/'>
                             <Redirect to="/home" />
                         </Route>
@@ -226,6 +251,7 @@ export default class Home extends React.Component {
                         <Route path='/form/richtext' component={Richtext}></Route>
                         <Route path='/show/listbox' component={Listbox}></Route>
                         <Route path='/show/tablebox' component={Tablebox}></Route>
+                        <Route path='/other/animate' component={Animate}></Route>
                     </div>
                 </div>
             </div>

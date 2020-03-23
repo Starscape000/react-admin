@@ -1,0 +1,33 @@
+.animate {
+    .animate1 {
+        float: left;
+        width: 29%;
+        height: 400px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        p {
+            font-size: 18px;
+            border-bottom: 1px solid #aaa;
+        }
+        .ant-btn {
+            margin: 0 10px 10px 0;
+        }
+    }
+    .animate2 {
+        float: right;
+        width: 69%;
+        height: 750px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        p {
+            font-size: 18px;
+            border-bottom: 1px solid #aaa;
+        }
+    }
+}
