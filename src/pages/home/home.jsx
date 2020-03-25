@@ -63,7 +63,7 @@ export default class Home extends React.Component {
                 page404: '404',
                 page500: '500'
             },
-            routing: '',
+            routing: [],
             rootSubmenuKeys: ['UI', 'form', 'show', 'other'],
             openKeys: [],
             defaultOpenKeys: [],
@@ -326,12 +326,13 @@ export default class Home extends React.Component {
                                         首页
                                     </Link>
                                 </Breadcrumb.Item>
-                                <Breadcrumb.Item>
-                                    {this.state.routing[0]}
-                                </Breadcrumb.Item>
-                                <Breadcrumb.Item>
-                                    {this.state.routing[1]}
-                                </Breadcrumb.Item>
+                                {this.state.routing.map(item => {
+                                    return (
+                                        <Breadcrumb.Item>
+                                            {item}
+                                        </Breadcrumb.Item>
+                                    );
+                                })}
                             </Breadcrumb>
                         </p>
                     </div>
